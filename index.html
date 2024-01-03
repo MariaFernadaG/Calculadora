@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
-    <link rel="icon" type="image/x-icon" href="">
+    <link rel="icon" type="image/x-icon" href="./img/calculadora.png">
     <link rel="stylesheet" href="css/styles.css" />
     <script src="./js/scripts.js" defer></script>
 </head>
 <body>
     <div id="calculadora">
         <input id="display" readonly>
+        <div class="toggle-container" title="Modo Escuro">
+            <input type="checkbox"  id="toggle" class="toggle-input" onclick="toggleDarkMode()">
+            <label for="toggle" class="toggle-label"></label>
+        </div>
         <div id="result">
          
            <button onclick="appendToDisplay('+')" class="operator-btn">+</button>
@@ -32,6 +36,8 @@
            <button onclick="clearDisplay()" class="operator-btn">C</button>
            
         </div>
+       
     </div>
+   
 </body>
 </html>
